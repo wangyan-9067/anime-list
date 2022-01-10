@@ -1,3 +1,13 @@
+# Public API used
+https://animechan.vercel.app/guide
+
+# Main Features
+- A list to display available animes
+- A detail page to display characters in selected anime
+- Lazy loading for characters more than one page
+- Error handling when api fails
+- Responsive UI support
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
