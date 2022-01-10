@@ -1,24 +1,21 @@
 import React from 'react';
+import Grid from '@mui/material/Grid';
 import logo from './logo.svg';
 import './App.css';
+import { AnimeList } from './AnimeList';
+import { Details } from './Details';
+import { Toaster } from 'react-hot-toast';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Anime List</h1>
+      <Grid container spacing={2}>
+        <Grid item xs={3}><AnimeList /></Grid>
+        <Grid item xs={9}><Details /></Grid>
+      </Grid>
+      <Toaster position="bottom-left" reverseOrder={false} />
     </div>
   );
 }
